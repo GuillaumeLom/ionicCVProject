@@ -1,0 +1,123 @@
+page-home {
+
+/////////////////////////////////////////////////
+//          CARD 
+/////////////////////////////////////////////////
+    .glenn_card {
+        float: left;
+        width: 50%;
+        background-color: red;
+        border: 1px solid black;
+    }
+    .guillaume_card{
+        float: right;
+        width: 50%;
+        background-color: blue;
+        border: 1px solid black;
+        color: white;
+    }
+    .cards {
+        width:100%;
+        display: inline-block;
+    }
+    .descrip_card {
+        border: 1px solid black;
+        width: 100%;
+    }
+
+    .experienceCard {
+        border: 1px solid black;
+        margin-left: 20px;
+        width: 95%;
+        height: 100px;
+    }
+    .formationCard{
+        border: 1px solid black;
+        margin-left: 20px;
+        width: 95%;
+        height: 100px;
+    }
+
+///////////////////////////////////////
+    .img_avatar {
+        width: 75px;
+        height: 75px;
+    }
+    .item {
+        font-size: 20px;
+    }
+    .card{
+        //display: inline-block;
+    }
+    .item-divider {
+        font-size: 26px;
+    }
+
+    p {
+        padding-top: 0px;
+        padding-bottom: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+
+//////////////////////////////////////////////////
+//                  AVATAR
+//////////////////////////////////////////////////
+    .circular--square {
+        border-top-left-radius: 50% 50%;
+        border-top-right-radius: 50% 50%;
+        border-bottom-right-radius: 50% 50%;
+        border-bottom-left-radius: 50% 50%;
+    }
+    .guillaume_avatar {
+        text-align: right;
+        padding: 5px;
+    }
+    .glenn_avatar {
+        text-align: left;
+        padding: 5px;
+    }
+
+////////////////////////////////////////////
+    .isVisible {
+        visibility: visible;
+    }
+    .isInvisible {
+        visibility: collapse;
+    }
+    .GuillaumeCV {
+
+    }
+    .GlennCV{
+
+    }
+///////////////////////////////////////////
+
+    .sumUp {
+        margin-left: 30px;
+    }
+
+    .descripTitle{
+        margin-top: 20px;
+        padding: -5px;
+        font-weight: bold;
+        font-style: italic;
+        font-family: "Calibri";
+    }
+
+    .experiences {
+        //border: 1px solid black;
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 20px; 
+    }
+
+    .formations{
+        width: 100%;
+        margin-left: 30px;
+        margin-top: 20px; 
+    }
+}
+
+

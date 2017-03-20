@@ -1,0 +1,63 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Notre CV Ionic</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <!--<div class="item item-text-wrap">
+      This is a card
+    </div>-->
+<div class="cards"> 
+  <div class="card glenn_card" (click)="switchDescrip('glenn')">
+    <div class="item item-divider glenn_avatar">
+      <img class="img_avatar circular--square" src="../../assets/sausage.gif"> LE MENN Glenn
+    </div>
+
+  </div>
+  <div class="card guillaume_card" (click)="switchDescrip('guillaume')">
+    <div class="item item-divider guillaume_avatar">
+      LOMBARD Guillaume
+      <img class="img_avatar circular--square" src="../../assets/giphy.gif">
+    </div>
+  </div>
+</div>
+  <!--<div class="card glenn_card" (click)="switchDescrip('glenn')">
+    <div class="item item-divider glenn_avatar">
+      <img class="img_avatar circular--square" src="../../assets/sausage.gif"> LE MENN Glenn
+    </div>
+
+  </div>
+  <div class="card guillaume_card" (click)="switchDescrip('guillaume')">
+    <div class="item item-divider guillaume_avatar">
+      LOMBARD Guillaume
+      <img class="img_avatar circular--square" src="../../assets/giphy.gif">
+    </div>
+  </div>-->
+
+  <div id="descrip" class="card descrip_card isInvisible">
+    <div class="item item-divider sumUp">
+      <p id="descripTitle" class="descripTitle">CV</p>
+      <p id="descripAge">Age</p>
+      <p id="descripAdress">Adresse</p>
+    </div>
+    <div class="item item-divider">
+      <div id="experiences" class="experiences">
+        <h1> EXPERIENCES PROFESSIONELLES</h1>
+        <!--<div class="card experienceCard">
+          <div id="exp_resume">
+              <p id="exp_title">exp title </p>
+              <p id="exp_date">exp title </p>
+          </div>
+          <div id="exp_descr">
+            BlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlablaBlabla
+            BlablaBlablaBlablaBlabla
+          </div>
+        </div>-->
+      </div>
+      <div id="formations" class="formations">
+        <h1> FORMATIONS</h1>
+      </div>
+    </div>
+  </div>
+</ion-content>

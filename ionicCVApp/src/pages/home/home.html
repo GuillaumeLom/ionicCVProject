@@ -4,18 +4,18 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="pageBack" padding>
     <!--<div class="item item-text-wrap">
       This is a card
     </div>-->
-<div class="cards"> 
-  <div class="card glenn_card" (click)="switchDescrip('glenn')">
+<div class="cards animated fadeIn"> 
+  <div class="card glenn_card animated slideInRight" (click)="switchDescrip('glenn')">
     <div class="item item-divider glenn_avatar">
       <img class="img_avatar circular--square" src="../../assets/sausage.gif"> LE MENN Glenn
     </div>
 
   </div>
-  <div class="card guillaume_card" (click)="switchDescrip('guillaume')">
+  <div class="card guillaume_card animated slideInLeft" (click)="switchDescrip('guillaume')">
     <div class="item item-divider guillaume_avatar">
       LOMBARD Guillaume
       <img class="img_avatar circular--square" src="../../assets/giphy.gif">
@@ -35,7 +35,7 @@
     </div>
   </div>-->
 
-  <div id="descrip" class="card descrip_card isInvisible">
+  <div id="descrip" class="descrip_card isInvisible animated bounceOut">
     <div class="item item-divider sumUp">
       <p id="descripTitle" class="descripTitle">CV</p>
       <p id="descripAge">Age</p>

@@ -82,19 +82,47 @@ export class HomePage {
     }
 
 
-
-    /*if (elem.classList.contains("isVisible")) {
-      elem.classList.remove("isVisible");
-      elem.classList.add("isInvisible");
-    } else if (elem.classList.contains("isInvisible")) {
-      elem.classList.remove("isInvisible");
-      elem.classList.add("isVisible");
+    //On resort le div de Descrip
+    /*if(elem.classList.contains("bounceOut") && elem.classList.contains("isInvisible")){
+      elem.classList.remove("bounceOut")
+      elem.classList.add("bounceIn")
+    }else{
+      if(elem.classList.contains("bounceIn")){
+          elem.classList.remove("bounceIn")
+      }
+      if(!elem.classList.contains("shake") || elem.classList.contains("wobble")){
+        elem.classList.remove("wobble")
+        elem.classList.add("shake")
+      }else{
+        elem.classList.remove("shake")
+        elem.classList.add("wobble")
+      }
     }*/
+
+    if(elem.classList.contains("bounceOut")){
+      elem.classList.remove("bounceOut");
+      elem.classList.add("bounceIn");
+    }else if(elem.classList.contains("bounceIn")){
+      elem.classList.remove("bounceIn");
+      elem.classList.add("bounceOut");
+    }
+    setTimeout(function(){
+      if(elem.classList.contains("bounceOut")){
+      elem.classList.remove("bounceOut");
+      elem.classList.add("bounceIn");
+    }
+    },1);
+
+
+
+    //On rend visible le div de description
     if (elem.classList.contains("isInvisible")) {
       elem.classList.remove("isInvisible");
       elem.classList.add("isVisible");
     }
+
     this.loadDescrip();
+    
   }
 
   public loadDescrip() {
@@ -117,6 +145,8 @@ export class HomePage {
       var newDiv = document.createElement('div');
       newDiv.classList.add('card');
       newDiv.classList.add('experienceCard');
+      newDiv.classList.add('animated');
+      newDiv.classList.add('fadeIn');
       var exp_resume = document.createElement('div');
       var exp_title = document.createElement('p'); exp_title.innerHTML = element.titre;
       var exp_date = document.createElement('p'); exp_date.innerHTML = element.date;
@@ -137,12 +167,14 @@ export class HomePage {
     while (elem.hasChildNodes()) {
       elem.removeChild(elem.firstChild);
     }
-    var form = document.createElement('h1'); form.innerHTML = "Formations";
+    form = document.createElement('h1'); form.innerHTML = "Formations";
     elem.appendChild(form);
     this.cvs[this.currentCV].formations.forEach(element => {
       var newDiv = document.createElement('div');
       newDiv.classList.add('card');
       newDiv.classList.add('formationCard');
+      newDiv.classList.add('animated');
+      newDiv.classList.add('fadeIn');
       var for_resume = document.createElement('div');
       var for_title = document.createElement('p'); for_title.innerHTML = element.titre;
       var for_date = document.createElement('p'); for_date.innerHTML = element.date;
